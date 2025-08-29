@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins';
+    color: #333;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
+    position: relative;
+}
+
+.nav {
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    z-index: 100;
+}
+
+.nav .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.nav .links a {
+    margin-left: 40px;
+    font-weight: 500;
+    color: #f4f4f4;
+    text-decoration: none;
+    position: relative;
+}
+
+.hero {
+    height: 450px;
+    background: url('https://zouk.co.in/cdn/shop/files/RK_Hp_banner-01.png?v=1751439924&width=2000') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section {
+    padding: 50px 20px 60px;
+}
+
+.section h2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    border: 2px solid #1a1a1a;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #1a1a1a;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-body h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.card-body .price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #007BFF;
+    margin-bottom: 12px;
+}
+
+.card-body button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background .2s;
+}
+
+.footer {
+    background: #1a1a1a;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: .9rem;
+    margin-top: auto;
+}
+
+.footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
